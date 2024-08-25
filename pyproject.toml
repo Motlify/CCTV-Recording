@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "cctv-recording"
+version = "0.1.0"
+description = ""
+authors = ["Daniel Goliszewski <daniel.goliszewski@motlify.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.10.13"
+kafka-python = "^2.0.2"
+python-dotenv = "^1.0.1"
+pydantic = "^2.8.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

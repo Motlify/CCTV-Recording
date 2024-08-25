@@ -1,0 +1,2 @@
+0 23 * * * /app/cctv_recording/create_dirs_cctv.py
+0 23 * * * /app/delete_old_cctv.sh 30

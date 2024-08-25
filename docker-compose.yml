@@ -1,0 +1,13 @@
+version: '3'
+
+volumes:
+  config:
+
+services:
+  cctv_recording:
+    image: docker.io/tafeen/cctv_recording:latest
+    volumes:
+      - /Users/daniel/Developer/_DEVELOPED_APPS/_CCTV/cctv_recording/test:/mnt/cctv
+      - config:/app/utils
+    environment:
+      retention_days: 30

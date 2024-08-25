@@ -1,0 +1,22 @@
+{
+    "still_images": "kafka",
+    "still_image_interval": 2,
+    "audio_duration": 60,
+    "cameras": [
+      {
+        "audio": true,
+        "name": "Doorbell",
+        "url": "rtsp://user:password@cam_ip:554"
+      },
+      {
+        "name": "Storage",
+        "url": "rtsp://user:password@cam_ip:554"
+      }
+    ],
+    "cameras_dir": "/mnt/cctv",
+    "kafka": {
+      "api_url": "kafak_host:9092",
+      "audio_topic": "cctv-audio-snapshots",
+      "images_topic": "cctv-images-snapshots"
+    }
+  }
