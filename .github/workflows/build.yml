@@ -22,8 +22,8 @@ jobs:
 
       - name: 'Build cctv_recording Image'
         run: |
-          docker build . --tag docker.io/tafeen/cctv_recording:latest
-          docker push docker.io/tafeen/cctv_recording:latest
+          docker build . --tag docker.io/tafeen/cctv_recording:${{github.ref_name}}
+          docker push docker.io/tafeen/cctv_recording:${{github.ref_name}}
 
   build-version:
     runs-on: ubuntu-latest
@@ -41,5 +41,5 @@ jobs:
 
       - name: 'Build cctv_recording Image'
         run: |
-          docker build . --tag docker.io/tafeen/cctv_recording:${{github.ref_name}}
-          docker push docker.io/tafeen/cctv_recording:${{github.ref_name}}
+          docker build . --tag docker.io/tafeen/cctv_recording:latest
+          docker push docker.io/tafeen/cctv_recording:latest
